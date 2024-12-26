@@ -432,6 +432,10 @@ a:focus {
   border-bottom: 30px solid #ffe600;
 }
 
+.about p{
+  text-align : justify;
+}
+
 .about img {
   width: 100%;
   height: auto;
@@ -657,6 +661,10 @@ a:focus {
   padding: 60px 30px 30px 30px;
   background: #000000;
   border-bottom: 30px solid #ffe600;
+}
+
+.service p{
+  text-align: justify;
 }
 
 .service .srv-col {
