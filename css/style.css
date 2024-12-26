@@ -279,7 +279,7 @@ a:focus {
 }
 
 .back-to-top i {
-  color: #222222;
+  color: #3a3a3a;
 }
 
 .back-to-top i:hover {
@@ -429,13 +429,13 @@ a:focus {
   position: relative;
   padding: 60px 30px;
   background: #000000;
-  border-bottom: 30px solid #f6d155;
+  border-bottom: 30px solid #ffe600;
 }
 
 .about img {
   width: 100%;
   height: auto;
-  border: 5px solid #f6d155;
+  border: 5px solid #ffe600;
   border-radius: 50%;
 }
 
