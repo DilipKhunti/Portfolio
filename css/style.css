@@ -1,21 +1,30 @@
 /**********************************/
 /********** General CSS ***********/
 /**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --theme-color-1: #2f2f2f;
+  --theme-color-2: #6ab1fc;
+  --theme-color-3: #000000;
+  --theme-color-4: #7a90ac;
+}
+
 body {
-  color: #ffffff;
-  background: #ffe600;
-  font-family: "Open Sans", sans-serif;
+  color: var(--theme-color-3);
+  background: var(--theme-color-1);
+  font-family: "Poppins", sans-serif;
 }
 
 a {
-  color: #222222;
+  color: var(--theme-color-3);
   transition: all 0.3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #ff6f61;
+  color: var(--theme-color-1);
   outline: none;
   text-decoration: none;
 }
@@ -38,7 +47,7 @@ a:focus {
   position: relative;
   width: 100%;
   float: left;
-  background: #000000;
+  background: var(--theme-color-2);
 }
 
 .wrapper .content {
@@ -46,7 +55,7 @@ a:focus {
   width: 100%;
   padding: 15px;
   float: left;
-  background: #ffe600;
+  background: var(--theme-color-1);
 }
 
 .wrapper .sidebar-header,
@@ -56,12 +65,12 @@ a:focus {
 
 .navbar {
   padding: 15px;
-  background: #000000 !important;
+  background: var(--theme-color-2) !important;
 }
 
 .navbar-expand-md .navbar-nav .nav-item {
   width: 100%;
-  border-top: 1px solid #ffe6007d;
+  border-top: 1px solid var(--theme-color-1);
 }
 
 .navbar-expand-md .navbar-nav .nav-item:first-child {
@@ -69,13 +78,13 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  color: #ffffff;
+  color: var(--theme-color-3);
   padding: 5px 15px 7px 15px;
   transition: all 0.3s;
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
-  color: #ffe600;
+  color: var(--theme-color-1);
   float: right;
   padding-top: 5px;
   transition: all 0.3s;
@@ -83,12 +92,12 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active {
-  color: #ffe600;
+  color: var(--theme-color-1);
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
 .navbar-expand-md .navbar-nav .nav-link.active i {
-  color: #ffffff;
+  color: var(--theme-color-3);
 }
 
 .wrapper .sidebar,
@@ -110,7 +119,7 @@ a:focus {
     content: "";
     width: 100%;
     height: 30px;
-    background: #ffe600;
+    background: var(--theme-color-1);
     z-index: 1;
   }
 
@@ -194,7 +203,7 @@ a:focus {
     padding: 15px;
     font-size: 0;
     text-align: center;
-    background: #000000;
+    background: var(--theme-color-2);
   }
 
   .sidebar .sidebar-footer a {
@@ -205,9 +214,13 @@ a:focus {
     margin: 0 15px 15px 0;
     text-align: center;
     font-size: 18px;
-    color: #222222;
-    background: #ffe600;
+    color: var(--theme-color-4);
+    background: var(--theme-color-1);
     border-radius: 5rem;
+  }
+
+  .sidebar .sidebar-footer a i {
+    color: var(--theme-color-2);
   }
 
   .sidebar .sidebar-footer a:last-child {
@@ -215,8 +228,8 @@ a:focus {
   }
 
   .sidebar .sidebar-footer a:hover {
-    color: #000000;
-    background: #ffffff;
+    color: var(--theme-color-2);
+    background: var(--theme-color-3);
   }
 
   .sidebar:hover .sidebar-footer {
@@ -279,11 +292,11 @@ a:focus {
 }
 
 .back-to-top i {
-  color: #3a3a3a;
+  color: var(--theme-color-4);
 }
 
 .back-to-top i:hover {
-  color: #ebebeb;
+  color: var(--theme-color-3);
 }
 
 .back-to-top {
@@ -314,7 +327,7 @@ a:focus {
 /**********************************/
 .header {
   position: relative;
-  background: #000000;
+  background: var(--theme-color-2);
 }
 
 .header .content-inner {
@@ -324,20 +337,20 @@ a:focus {
 }
 
 .header p {
-  color: #ffe600;
+  color: var(--theme-color-1);
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .header h1 {
-  color: #ffffff;
+  color: var(--theme-color-3);
   font-size: 50px;
   font-weight: 700;
 }
 
 .header h2 {
-  color: #ffe600;
+  color: var(--theme-color-1);
   display: inline-block;
   margin: 0;
   height: 25px;
@@ -351,27 +364,27 @@ a:focus {
 .header .typed-cursor {
   font-size: 25px;
   font-weight: 300;
-  color: #fffcfc;
+  color: var(--theme-color-3);
 }
 
 .large-btn .content-inner {
   font-size: 0;
-  border-bottom: 30px solid #ffe600;
+  border-bottom: 30px solid var(--theme-color-1);
 }
 
 .large-btn .btn {
   position: relative;
   width: 50%;
   padding: 15px 0;
-  color: #000000;
+  color: var(--theme-color-2);
   font-size: 20px;
-  background: #ffffff;
+  background: var(--theme-color-3);
   border-radius: 0;
 }
 
 .large-btn .btn:last-child {
-  color: #ffe600;
-  background: #353535;
+  color: var(--theme-color-1);
+  background: var(--theme-color-4);
 }
 
 .large-btn .btn i {
@@ -404,7 +417,7 @@ a:focus {
 }
 
 .content-header h2 {
-  color: #ffe600;
+  color: var(--theme-color-1);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -419,7 +432,7 @@ a:focus {
   height: 3px;
   bottom: 0;
   left: 0;
-  background: #ffffff;
+  background: var(--theme-color-3);
 }
 
 /**********************************/
@@ -428,19 +441,19 @@ a:focus {
 .about {
   position: relative;
   padding: 60px 30px;
-  background: #000000;
-  border-bottom: 30px solid #ffe600;
-}
-
-.about p{
-  text-align : justify;
+  background: var(--theme-color-2);
+  border-bottom: 30px solid var(--theme-color-1);
 }
 
 .about img {
   width: 100%;
   height: auto;
-  border: 5px solid #ffe600;
+  border: 5px solid var(--theme-color-1);
   border-radius: 50%;
+}
+
+.about p {
+  text-align: justify;
 }
 
 @media (max-width: 767.98px) {
@@ -451,15 +464,15 @@ a:focus {
 
 .about .btn {
   border-radius: 0;
-  color: #000000;
-  background: #ffe600;
+  color: var(--theme-color-2);
+  background: var(--theme-color-1);
   transition: all 0.3s;
   border-radius: 2rem;
 }
 
 .about .btn:hover {
-  color: #000000;
-  background: #ffffff;
+  color: var(--theme-color-2);
+  background: var(--theme-color-3);
 }
 
 .about .skills {
@@ -483,14 +496,14 @@ a:focus {
 
 .about .progress {
   height: 5px;
-  border: 1px solid #ffe600;
+  border: 1px solid var(--theme-color-1);
   border-radius: 0;
-  background: #ffffff;
+  background: var(--theme-color-3);
 }
 
 .about .progress .progress-bar {
   width: 1px;
-  background: #ffe600;
+  background: var(--theme-color-1);
   border-radius: 0;
   transition: 1s;
 }
@@ -501,16 +514,16 @@ a:focus {
 .education {
   position: relative;
   padding: 60px 30px;
-  background: #000000;
-  border-bottom: 30px solid #ffe600;
+  background: var(--theme-color-2);
+  border-bottom: 30px solid var(--theme-color-1);
 }
 
 .education .edu-col {
   position: relative;
   width: 100%;
   padding: 20px 0 20px 20px;
-  border-left: 1px solid #ffe600;
-  border-bottom: 1px solid #ffe600;
+  border-left: 1px solid var(--theme-color-1);
+  border-bottom: 1px solid var(--theme-color-1);
 }
 
 .education .col-md-6:first-child .edu-col {
@@ -547,14 +560,14 @@ a:focus {
   content: "";
   width: 11px;
   height: 11px;
-  background: #ffe600;
+  background: var(--theme-color-1);
   top: 5px;
   left: -26px;
   border-radius: 5px;
 }
 
 .education .edu-col span i {
-  color: #ffe600;
+  color: var(--theme-color-1);
 }
 
 .education .edu-col h3 {
@@ -573,16 +586,16 @@ a:focus {
 .experience {
   position: relative;
   padding: 60px 30px;
-  background: #000000;
-  border-bottom: 30px solid #ffe600;
+  background: var(--theme-color-2);
+  border-bottom: 30px solid var(--theme-color-1);
 }
 
 .experience .exp-col {
   position: relative;
   width: 100%;
   padding: 20px 0 20px 20px;
-  border-left: 1px solid #ffe600;
-  border-bottom: 1px solid #ffe600;
+  border-left: 1px solid var(--theme-color-1);
+  border-bottom: 1px solid var(--theme-color-1);
 }
 
 .experience .col-md-6:first-child .exp-col {
@@ -619,14 +632,14 @@ a:focus {
   content: "";
   width: 11px;
   height: 11px;
-  background: #ffe600;
+  background: var(--theme-color-1);
   top: 5px;
   left: -26px;
   border-radius: 5px;
 }
 
 .experience .exp-col span i {
-  color: #ffe600;
+  color: var(--theme-color-1);
 }
 
 .experience .exp-col h3 {
@@ -659,11 +672,11 @@ a:focus {
 .service {
   position: relative;
   padding: 60px 30px 30px 30px;
-  background: #000000;
-  border-bottom: 30px solid #ffe600;
+  background: var(--theme-color-2);
+  border-bottom: 30px solid var(--theme-color-1);
 }
 
-.service p{
+.service p {
   text-align: justify;
 }
 
@@ -675,7 +688,7 @@ a:focus {
 
 .service .srv-col i {
   font-size: 30px;
-  color: #ffe600;
+  color: var(--theme-color-1);
   margin-bottom: 15px;
 }
 
@@ -709,8 +722,8 @@ a:focus {
 .portfolio {
   position: relative;
   padding: 60px 30px 30px 30px;
-  background: #000000;
-  border-bottom: 30px solid #ffe600;
+  background: var(--theme-color-2);
+  border-bottom: 30px solid var(--theme-color-1);
 }
 
 .portfolio #portfolio-flters {
@@ -726,19 +739,19 @@ a:focus {
   display: inline-block;
   height: 35px;
   padding: 10px;
-  color: #666666;
+  color: var(--theme-color-3);
   font-size: 13px;
   line-height: 15px;
   text-transform: uppercase;
-  border: 1px solid #ffe600;
-  background: #ffffff;
+  border: 1px solid var(--theme-color-3);
+  background: var(--theme-color-4);
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #ffe600;
-  color: #222222;
+  background: var(--theme-color-1);
+  color: var(--theme-color-4);
 }
 
 .portfolio .portfolio-item {
@@ -748,7 +761,7 @@ a:focus {
 }
 
 .portfolio .portfolio-item figure {
-  background: #ffffff;
+  background: var(--theme-color-3);
   overflow: hidden;
   height: 220px;
   position: relative;
@@ -777,25 +790,25 @@ a:focus {
   text-align: center;
   width: 45px;
   height: 35px;
-  background: #ffe600;
+  background: var(--theme-color-1);
   transition: 0.2s linear;
 }
 
 .portfolio .portfolio-item figure .link-preview i,
 .portfolio .portfolio-item figure .link-details i {
-  color: #222222;
+  color: var(--theme-color-2);
   padding-top: 10px;
   font-size: 16px;
 }
 
 .portfolio .portfolio-item figure .link-preview:hover,
 .portfolio .portfolio-item figure .link-details:hover {
-  background: #222222;
+  background: var(--theme-color-2);
 }
 
 .portfolio .portfolio-item figure .link-preview:hover i,
 .portfolio .portfolio-item figure .link-details:hover i {
-  color: #ffe600;
+  color: var(--theme-color-1);
 }
 
 .portfolio .portfolio-item figure .link-preview {
@@ -816,10 +829,10 @@ a:focus {
   right: 0;
   top: 100%;
   padding: 30px 10px;
-  color: #000000;
+  color: var(--theme-color-2);
   font-size: 16px;
   font-weight: 600;
-  background: #ffe6005b;
+  background: var(--theme-color-1);
   border-radius: 0;
 }
 
@@ -856,7 +869,7 @@ a:focus {
 .contact {
   position: relative;
   padding: 60px 30px 30px 30px;
-  background: #000000;
+  background: var(--theme-color-2);
 }
 
 .contact .contact-info {
@@ -874,15 +887,15 @@ a:focus {
 
 .contact .contact-info p i {
   width: 25px;
-  color: #ffe600;
+  color: var(--theme-color-1);
 }
 
 .contact .contact-info p a {
-  color: #666666;
+  color: var(--theme-color-1);
 }
 
 .contact .contact-info p a:hover {
-  color: #ffe600;
+  color: var(--theme-color-1);
   text-decoration: none;
 }
 
@@ -894,8 +907,8 @@ a:focus {
   width: 35px;
   height: 35px;
   padding: 5px 0;
-  color: #222222;
-  background: #ffe600;
+  color: c=var(--theme-color-2);
+  background: var(--theme-color-1);
   border-radius: 50rem;
   margin-top: 15px;
   margin-right: 15px;
@@ -907,8 +920,11 @@ a:focus {
 }
 
 .contact .social a:hover {
-  color: #000000;
-  background: #ffffff;
+  color: var(--theme-color-2);
+  background: var(--theme-color-3);
+}
+.contact .social i {
+  color: var(--theme-color-2);
 }
 
 .contact .form {
@@ -923,19 +939,19 @@ a:focus {
 
 .contact .form .form-control:focus {
   box-shadow: none;
-  border-color: #ffe600;
+  border-color: var(--theme-color-1);
 }
 
 .contact .form .btn {
-  color: #222222;
-  background: #ffe600;
+  color: var(--theme-color-2);
+  background: var(--theme-color-1);
   border-radius: 100px;
   transition: all 0.3s;
 }
 
 .contact .form .btn:hover {
-  color: #000000;
-  background: #ffffff;
+  color: var(--theme-color-2);
+  background: var(--theme-color-3);
 }
 
 /**********************************/
@@ -945,7 +961,7 @@ a:focus {
   position: relative;
   width: 100%;
   padding: 30px 30px 0 30px;
-  background: #ffe600;
+  background: var(--theme-color-1);
 }
 
 .footer .col-md-6:last-child {
@@ -960,15 +976,15 @@ a:focus {
 }
 
 .footer p {
-  color: #222222;
+  color: var(--theme-color-2);
   margin: 0;
 }
 
 .footer a {
-  color: #000000;
+  color: var(--theme-color-2);
   font-weight: 600;
 }
 
 .footer a:hover {
-  color: #222222;
+  color: var(--theme-color-2);
 }
