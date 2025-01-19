@@ -27,7 +27,7 @@ To run the project locally, follow these steps:
 
 2. **Navigate to the project directory:**
    ```bash
-   cd your-portfolio-website
+   cd Portfolio
    ```
 
 3. **Open `index.html` in your browser** or use a live server extension in your code editor.
