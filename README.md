@@ -2,6 +2,10 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences, providing an overview of who I am and what I do.
 
+## 🌐 Live Demo
+
+Check out the live version of the website: https://dilipkhunti.github.io/Portfolio/
+
 ## 🌟 Features
 
 - **Responsive Design**: Fully optimized for all screen sizes.
@@ -60,12 +64,6 @@ Feel free to reach out to me via:
 ## 📜 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-### 🌐 Live Demo
-
-Check out the live version of the website: https://dilipkhunti.github.io/Portfolio/
 
 ---
 
